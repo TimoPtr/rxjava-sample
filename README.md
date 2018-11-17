@@ -32,11 +32,23 @@ Use case : Connect to multiple interface, and you don't care if one of them is d
 
 [MergeAllowErrorSample](app/src/test/kotlin/com/github/timoptr/sample/rxjava/operators/MergeAllowErrorTest.kt)
 
+## Wrapper MQTT
+This is a simple wrapper around the paho library which expose Observable
 
-## BroadcastReceiver
+### Implementation 
+
+[RxMqttClient](app/src/main/kotlin/com/github/timoptr/sample/rxjava/wrapper/RxMqttClient.kt)
+
+### Sample 
+
+[RxMqttClientSample](app/src/test/kotlin/com/github/timoptr/sample/rxjava/wrapper/RxMqttClientTest.kt)
+
 
 ## WebSocket
 
 ## TCP
 
-## MQTT
+
+## BroadcastReceiver
+
+

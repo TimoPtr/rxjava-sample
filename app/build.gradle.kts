@@ -11,6 +11,7 @@ dependencies {
 
     implementation("io.reactivex.rxjava2:rxjava:2.2.3")
     implementation("nl.littlerobots.rxlint:rxlint:1.7.0")
+    implementation("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0")
 
     testImplementation("junit:junit:4.12")
 }

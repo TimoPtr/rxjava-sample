@@ -44,6 +44,7 @@ repositories {
 dependencies {
     // gradle plugins scope
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin") // version inject by the IDE
+    implementation("com.android.tools.build:gradle:3.2.1")
 }
 
 allprojects {
