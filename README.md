@@ -45,6 +45,16 @@ This is a simple wrapper around the [paho](https://github.com/eclipse/paho.mqtt.
 
 
 ## WebSocket
+This is a simple wrapper around the [okhttp](https://github.com/square/okhttp) library which expose Observable
+
+### Implementation 
+
+[RxWebSocketClient](app/src/main/kotlin/com/github/timoptr/sample/rxjava/wrapper/RxWebSocketClient.kt)
+
+### Sample 
+
+[RxMqttClientSample](app/src/test/kotlin/com/github/timoptr/sample/rxjava/wrapper/RxWebSocketClientTest.kt)
+
 
 ## TCP
 

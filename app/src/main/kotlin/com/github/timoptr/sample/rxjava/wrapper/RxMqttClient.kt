@@ -34,12 +34,11 @@ class RxMqttClient(private val broker: String,
                    private val clientID: String = "Kotlin_${UUID.randomUUID()}") : MqttCallback {
 
     data class Message(val topic: String, val mqttMessage: MqttMessage)
-    class InterfaceNotConnectedException(s: String) : Throwable(s)
 
     /**
      * The wrapper state of client to listen to get the status of the wrapper
      */
-    private val connectionSubject = BehaviorSubject.create<State>()
+    private val connectionSubject = BehaviorSubject.createDefault(State.DISCONNECTED)
     val connectionState: Observable<State> = connectionSubject
 
     /**
@@ -52,10 +51,6 @@ class RxMqttClient(private val broker: String,
      */
     private val messageSubject = PublishSubject.create<Message>()
     val messageObservable: Observable<Message> = messageSubject
-
-    init {
-        connectionSubject.onNext(State.DISCONNECTED) // initialise the subject
-    }
 
     /**
      * Create the Mqtt client, connect to the Mqtt broker, update [connectionState] status,
@@ -135,6 +130,8 @@ class RxMqttClient(private val broker: String,
     }
 
     /**
+     * Send data over mqttClient to the given topics in message
+     *
      * @throws InterfaceNotConnectedException if the mqtt isn't connected
      */
     fun write(message: Message) {
