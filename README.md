@@ -33,7 +33,7 @@ Use case : Connect to multiple interface, and you don't care if one of them is d
 [MergeAllowErrorSample](app/src/test/kotlin/com/github/timoptr/sample/rxjava/operators/MergeAllowErrorTest.kt)
 
 ## Wrapper MQTT
-This is a simple wrapper around the paho library which expose Observable
+This is a simple wrapper around the [paho](https://github.com/eclipse/paho.mqtt.java) library which expose Observable
 
 ### Implementation 
 
