@@ -56,3 +56,7 @@ This is a simple wrapper around the [okhttp](https://github.com/square/okhttp) l
 [RxMqttClientSample](app/src/test/kotlin/com/github/timoptr/sample/rxjava/wrapper/RxWebSocketClientTest.kt)
 
 
+## RxBroadcastReceiver
+This is a simple wrapper to listen on broadcast on Android platform
+
+[RxBroadcastReceiver](https://gist.github.com/TimoPtr/572c4b3ec001b036de1c305a3ad9bd60)
