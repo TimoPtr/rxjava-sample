@@ -56,9 +56,3 @@ This is a simple wrapper around the [okhttp](https://github.com/square/okhttp) l
 [RxMqttClientSample](app/src/test/kotlin/com/github/timoptr/sample/rxjava/wrapper/RxWebSocketClientTest.kt)
 
 
-## TCP
-
-
-## BroadcastReceiver
-
-
